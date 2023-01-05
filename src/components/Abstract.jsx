@@ -1,29 +1,19 @@
-import image from "../assets/images.jpg";
+import image from "../assets/foto.png";
 import foodmart from "../assets/foodmart.jpg";
 function Abstract() {
   return (
     <div className='w-full   text-black py 2'>
       <div className="max-w-screen p-4 mx-auto flex  justify-center w-full h-full ">
         <img
-          className="w-1/4 max-h-[500px] object-cover" 
+          className="w-1/4  " 
           src={image}
           alt="/"
         />
         
         <p className="text-xl w-2/4  px-2 py-20 ">
-          El problema de negocio es determinar el costo de adquisición de nuevos
-          clientes (CAC) en la cadena de supermercados Convenient Food Mart
-          (CFM). El CAC es una métrica importante para las empresas, ya que mide
-          el costo que la empresa incurre para atraer a un nuevo cliente a la
-          empresa. Este costo puede incluir publicidad, promociones, marketing,
-          incentivos y otros gastos relacionados con la adquisición de nuevos
-          clientes. Conocer el CAC es importante para poder tomar decisiones
-          sobre cómo invertir en la adquisición de nuevos clientes y para poder
-          comparar el CAC con el valor a largo plazo que un cliente le genera a
-          la empresa.
-        </p>
+        Este front-end está desarrollado con React JS y utiliza la librería de estilos CSS Tailwind para predecir el costo de adquisición de un nuevo cliente en la cadena de supermercados Convenient Foodmark. La aplicación se conectará con un backend que utiliza FastAPI y una imagen de Docker, que alimenta un modelo de machine learning entrenado con los valores asignados a cada una de las variables. Luego, traerá la predicción del modelo de machine learning. Este proyecto fue desarrollado por Juan Pablo Montoya como el proyecto final de la especialización en la Universidad de Antioquia.        </p>
         <img
-          className="w-1/4 max-h-[500px] " 
+          className="w-1/4  " 
           src={foodmart}
           alt="/"
         />
