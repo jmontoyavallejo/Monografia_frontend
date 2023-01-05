@@ -29,21 +29,21 @@ function generateForm(jsonData) {
 
     const FormContainer = () => {
       return (
-        <div className="bg-gradient-to-r from-cyan-500 to-blue-500 flex ">
+        <div className="bg-gradient-to-r bg-[#fe0000] flex ">
           <div className="w-full h-full">
-            <h3  className='px-2 py-2 text-2xl bg-gray-200'>INGRESA DATOS DEL ITEM</h3>
+            <h3  className='px-2 py-2 text-2xl bg-[#d8be10]'>INGRESA DATOS DEL ITEM</h3>
             <form id='1' className='px-2'>
               {generateForm( df_items)}
             </form>
           </div>
           <div className="w-full h-full">
-            <h3 className='px-2 py-2 text-2xl bg-gray-200'>INGRESA DATOS DE LA TIENDA</h3>
+            <h3 className='px-2 py-2 text-2xl bg-[#d8be10]'>INGRESA DATOS DE LA TIENDA</h3>
             <form id='2'className='px-2'>
               {generateForm( df_store)}
             </form>
           </div>
           <div className="w-full h-full">
-            <h3 className='px-2 py-2 text-2xl bg-gray-200'>INGRESA DATOS DEL USUARIO</h3>
+            <h3 className='px-2 py-2 text-2xl bg-[#d8be10]'>INGRESA DATOS DEL USUARIO</h3>
             <form id='3' className='px-2'>
               {generateForm(df_user)}
             </form>

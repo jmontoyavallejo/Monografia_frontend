@@ -2,15 +2,15 @@ import image from "../assets/images.jpg";
 import foodmart from "../assets/foodmart.jpg";
 function Abstract() {
   return (
-    <div className='w-full   text-black '>
+    <div className='w-full   text-black py 2'>
       <div className="max-w-screen p-4 mx-auto flex  justify-center w-full h-full ">
         <img
-          className="w-1/3 max-h-[500px] object-cover" 
+          className="w-1/4 max-h-[500px] object-cover" 
           src={image}
           alt="/"
         />
         
-        <p className="text-xl 1/3  ">
+        <p className="text-xl w-2/4  px-2 py-20 ">
           El problema de negocio es determinar el costo de adquisición de nuevos
           clientes (CAC) en la cadena de supermercados Convenient Food Mart
           (CFM). El CAC es una métrica importante para las empresas, ya que mide
@@ -23,7 +23,7 @@ function Abstract() {
           la empresa.
         </p>
         <img
-          className="w-1/3 max-h-[500px] " 
+          className="w-1/4 max-h-[500px] " 
           src={foodmart}
           alt="/"
         />
