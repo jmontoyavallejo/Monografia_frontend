@@ -10,7 +10,7 @@ const Predict = () => {
          Prediction
         </h1>
       </div>
-
+      <div className="json-container"></div>
 
     </div>
   );
