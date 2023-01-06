@@ -166,7 +166,7 @@
     ]
   },
   {
-    "avg_cars_at home(approx)": [
+    "avg_cars_at_home_approx": [
       1.0,
       4.0,
       2.0,
@@ -175,7 +175,7 @@
     ]
   },
   {
-    "avg. yearly_income": [
+    "avg_yearly_income": [
       "$10K - $30K",
       "$50K - $70K",
       "$30K - $50K",
@@ -911,7 +911,7 @@
     ]
   },
   {
-    "unit_sales(in millions)": [
+    "unit_sales_in_millions": [
       4.0,
       3.0,
       2.0,

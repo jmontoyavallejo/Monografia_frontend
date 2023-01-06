@@ -26,6 +26,7 @@ function generateForm(jsonData) {
   return formElements;
 };
 
+
 function handleSubmit(event) {
   event.preventDefault();
   const formData = new FormData(event.target);
@@ -39,12 +40,12 @@ function handleSubmit(event) {
   });
   if (complete) {
     console.log(data);
-    const jsonContainer = document.querySelector(".json-container");
-    jsonContainer.textContent = JSON.stringify(data);
+    sendJSONToAPI(data);
   } else {
     alert("Por favor, selecciona una opción para todos los campos");
   }
 };
+
 
 function randomizeValues() {
   const inputs = document.querySelectorAll("select");
@@ -54,14 +55,37 @@ function randomizeValues() {
     input.value = options[randomIndex].value;
   });
 };
+
+
 function clearForm() {
   const inputs = document.querySelectorAll("select");
   inputs.forEach((input) => {
     input.value = "";
   })
   const jsonContainer = document.querySelector(".json-container");
-  jsonContainer.textContent = '';;
+  jsonContainer.textContent = '';
 };
+
+
+const sendJSONToAPI = (jsonData) => {
+  fetch('http://localhost:8000/predict', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(jsonData),
+  })
+  .then((response) => response.json())
+  .then((responseData) => {
+    const jsonContainer = document.querySelector(".json-container");
+    jsonContainer.textContent = responseData["prediction"];
+  })
+  .catch((error) => {
+    console.error(error);
+  });
+}
+
+
 const FormContainer = () => {
   return (
     <div className="bg-gradient-to-r bg-[#fe0000] flex">
