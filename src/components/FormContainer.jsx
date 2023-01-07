@@ -81,7 +81,8 @@ const sendJSONToAPI = (jsonData) => {
     jsonContainer.textContent = responseData["prediction"];
   })
   .catch((error) => {
-    console.error(error);
+    const jsonContainer = document.querySelector(".json-container");
+    jsonContainer.textContent = 'no hay respuesta el servidor del backend';
   });
 }
 
