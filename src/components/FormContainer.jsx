@@ -29,6 +29,8 @@ function generateForm(jsonData) {
 
 function handleSubmit(event) {
   event.preventDefault();
+  const jsonContainer = document.querySelector(".json-container");
+  jsonContainer.textContent = '';
   const formData = new FormData(event.target);
   const data = Object.fromEntries(formData);
   const inputs = document.querySelectorAll("select");
@@ -68,7 +70,8 @@ function clearForm() {
 
 
 const sendJSONToAPI = (jsonData) => {
-  fetch('https://test-api-pr1g.onrender.com/predict', {
+  // fetch('https://test-api-pr1g.onrender.com/predict', {
+  fetch('http://127.0.0.1:8000/predict', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
