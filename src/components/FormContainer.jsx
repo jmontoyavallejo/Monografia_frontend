@@ -70,8 +70,8 @@ function clearForm() {
 
 
 const sendJSONToAPI = (jsonData) => {
-  // fetch('https://test-api-pr1g.onrender.com/predict', {
-  fetch('http://127.0.0.1:8000/predict', {
+  fetch('https://test-api-pr1g.onrender.com/predict', {
+  // fetch('http://127.0.0.1:8000/predict', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
