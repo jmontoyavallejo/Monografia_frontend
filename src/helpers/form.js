@@ -14,9 +14,6 @@ export const handleSubmit = async (event) => {
     }
   });
   if (complete) {
-    
-    showModal(JSON.stringify(data))
-    console.log(data)
     try {
       const resp = await fetch('https://test-api-pr1g.onrender.com/predict', {
         method: 'POST',
