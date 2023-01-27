@@ -14,7 +14,7 @@ export const showModal = text => {
       popup: 'animate__animated animate__fadeOutUp'
     },
     customClass: {
-      confirmButton: 'bg-transparent hover:bg-[#6adf26] text-[#6adf26] font-semibold hover:text-white py-2 px-4 border border-[#6adf26] hover:border-transparent rounded'
+      confirmButton: 'bg-transparent hover:bg-[#cf3420] text-[#cf3420] font-semibold hover:text-white py-2 px-4 border border-[#cf3420] hover:border-transparent rounded'
     },
     buttonsStyling: false,
     confirmButtonText:"REGRESAR"
