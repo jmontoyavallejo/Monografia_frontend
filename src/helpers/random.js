@@ -1,0 +1,1 @@
+export const random = (optionsLength) => Math.floor(Math.random() * (optionsLength - 1)) + 1;

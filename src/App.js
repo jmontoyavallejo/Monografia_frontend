@@ -1,16 +1,14 @@
 import Abstract from "./components/Abstract"
-import NavBar from "./components/NavBar"
-import FormContainer from "./components/FormContainer"
-import Predict from "./components/Predict"
 import SocialLinks from "./components/SocialLinks"
+import Header from "./components/Header"
+import { Form } from "./components/Form"
+
 function App() {
   return (
     <div className="App">
-    <NavBar />
+    <Header />
+    <Form />
     <Abstract/>
-    <Predict/>
-    <FormContainer/>
-    
     <SocialLinks/>
     </div>
   );
