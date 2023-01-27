@@ -1,9 +1,12 @@
 import Swal from "sweetalert2"
 
 export const showModal = text => {
+  let prediction = parseFloat(text).toFixed(2)
+  
+  
   Swal.fire({
     title:"Prediccion C.A.C. :",
-    text,
+    text:'El costo de adquisión de ese cliente fue de '+prediction+' dolares',
     showClass: {
       popup: 'animate__animated animate__fadeInDown'
     },
